@@ -6,7 +6,7 @@ const title = document.querySelector('h3');
 
 const getMeme = () => {
     fetch(url).then(res => res.json()).then(data => {
-        img.setAttribute('src', `${data.preview[3]}`);
+        img.setAttribute('src', `${data.preview[2]}`);
         title.innerText = `${data.title}`;
     })
 }
